@@ -1,0 +1,89 @@
+/* css/styles.css */
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light mode background */
+  color: #333; /* Light mode text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mind Map Container */
+#mindmap-container {
+  width: 80vw;
+  height: 80vh;
+  background-color: #ffffff; /* Light mode container background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #e0e0e0; /* Dark mode text color */
+}
+
+body.dark-mode #mindmap-container {
+  background-color: #1e1e1e; /* Dark mode container background */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle label {
+  margin-right: 8px;
+  font-size: 14px;
+  color: inherit;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Context Menu Styles */
+.context-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.context-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.context-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dark Mode Context Menu */
+body.dark-mode .context-menu {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .context-menu li:hover {
+  background-color: #333;
+}

@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolutionary Mind Map</title>
+  
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Include Cytoscape.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+</head>
+
+<body>
+  <!-- Mind Map Container -->
+  <div id="mindmap-container"></div>
+
+  <!-- Context Menu for Node Actions -->
+  <div id="context-menu" class="context-menu">
+    <ul>
+      <li id="edit-node">Edit Node</li>
+      <li id="delete-node">Delete Node</li>
+    </ul>
+  </div>
+
+  <!-- Switch for Dark Mode -->
+  <div class="dark-mode-toggle">
+    <label for="dark-mode-checkbox">Dark Mode</label>
+    <input type="checkbox" id="dark-mode-checkbox">
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
